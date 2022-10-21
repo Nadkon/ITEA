@@ -4,9 +4,10 @@ body {
   font-family: PT Sans;
   max-width: 1920px;
   margin: 0 auto;
+  background-color: #f5f5f5;
 }
 
-header {
+.header {
   background-color: #202846;
   color: #ffffff;
   font-weight: 700;
@@ -15,6 +16,10 @@ header {
   display: flex;
   align-items: center;
   text-align: center;
+  position: fixed;
+  height: 90px;
+  z-index: 1;
+  padding-right: 10px;
 }
 .logo {
   margin-left: 30px;
@@ -30,16 +35,19 @@ li:hover {
   color: #aeaee2;
 }
 main {
-  background-color: #f5f5f5;
-  margin: 0;
+  max-width: 1489px;
+  margin: 0 auto;
 }
 .content {
-  margin: 0 225px;
+  margin: 0;
+  padding-top: 115px;
+  padding-bottom: 20px;
 }
 h1 {
   font-weight: 400;
   font-size: 48px;
   color: #202846;
+  margin: 0;
 }
 .italic {
   font-style: italic;
@@ -49,30 +57,46 @@ h2 {
   font-size: 28px;
   text-align: center;
   color: rgba(0, 0, 0, 0.61);
+  background-color: #e8e8e8;
+  padding: 20px;
 }
 h3 {
   font-size: 36px;
   line-height: 47px;
-  /* display: flex;
-  align-items: center;
-  text-align: center; */
   color: #353c57;
+  margin-top: 23px;
+  margin-bottom: 0;
 }
-.place-description {
+.card {
   background-color: #bdbdc6;
-  margin: 36px 0;
+  margin: 0 0 36px 0;
+  display: flex;
+  position: relative;
 }
-.place-description:hover {
+.card:hover {
   background-color: #aeabe2;
+}
+.card-img {
+  padding: 28px 103px;
+}
+.line {
+  border-bottom: 3px solid #ffffff;
+  width: 712px;
+  margin: 0 0 10px;
 }
 p {
   font-size: 22px;
   line-height: 28px;
   /* display: flex;
-  align-items: center;
-  text-align: center; */
+  align-items: center; */
+  text-align: center;
   color: #202846;
   background-color: #d7d7dd;
+  margin: 0;
+  width: 712px;
+  height: 184px;
+  padding-top: 25px;
+  margin-bottom: 30px;
 }
 button {
   background-color: #202846;
@@ -83,8 +107,29 @@ button {
   align-items: center;
   text-align: center; */
   border-radius: 30px;
+  width: 200px;
+  height: 60px;
 }
 
-button:hover {
+.card:hover button {
   background-color: #ef075b;
+}
+.button {
+  position: absolute;
+  right: -17px;
+  bottom: 10px;
+}
+svg {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.card:hover path {
+  fill: #ffff00;
+}
+div.sticky {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 101px;
 }
