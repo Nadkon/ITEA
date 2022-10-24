@@ -72,6 +72,7 @@ h3 {
   margin: 0 0 36px 0;
   display: flex;
   position: relative;
+  transition: all 0.5s;
 }
 .card:hover {
   background-color: #aeabe2;
@@ -109,6 +110,7 @@ button {
   border-radius: 30px;
   width: 200px;
   height: 60px;
+  transition: all 0.5s;
 }
 
 .card:hover button {
@@ -127,9 +129,9 @@ svg {
 .card:hover path {
   fill: #ffff00;
 }
-div.sticky {
-  position: absolute;
+div.fixed {
+  position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: 100px;
   height: 101px;
 }
