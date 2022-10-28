@@ -17,18 +17,21 @@ width: 100%;
 .nav{
     display: flex;
     width: 30%;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 li{
     list-style-type: none;
 }
-.link{
+a{
 
+    text-decoration: none;
 }
 .link > a{
     color: var(--white-color);
-    text-decoration: none;
     text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.1rem;
+    
 }
 .header__btn{
     background-color: var(--orange-color);
@@ -37,5 +40,33 @@ li{
     width: 121px;
     height: 54px;
     text-align: center;
-    padding: 12px 26px;
+}
+.header__btn > a{
+    color:var(--black-color);
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: .6rem 1.4rem;
+}
+
+/* MAIN */
+.about-me{
+    margin-top: 100px;
+    color:var(--white-color);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+
+}
+h1 > span{
+color: var(--orange-color);
+}
+h2 {
+font-size: 3rem;
+}
+p{
+font-size: 1.5rem;
+/* font-weight: 400; */
 }
