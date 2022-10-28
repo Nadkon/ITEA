@@ -2,6 +2,7 @@
     --black-color:#212529;
     --orange-color:#FFB742;
     --white-color:#ffffff;
+    --card-color:#292B2E;
 }
 body{
     background-color: var(--black-color);
@@ -69,4 +70,32 @@ font-size: 3rem;
 p{
 font-size: 1.5rem;
 /* font-weight: 400; */
+}
+
+/* experience */
+
+.cards{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.card{
+    width: 30%;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+.card>div>div:first-of-type{
+    color:var(--orange-color);
+font-size: 2rem;
+}
+.card>div>div:last-of-type{
+    color:var(--white-color);
+    font-size: 1rem;
 }
