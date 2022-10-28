@@ -1,0 +1,21 @@
+:root{
+    --black-color:#212529;
+    --orange-color:#FFB742;
+}
+body{
+    background-color: var(--black-color);
+}
+
+/* HEADER */
+.header{
+display: flex;
+}
+.nav{
+    display: flex;
+}
+li{
+list-style-type: none;
+}
+.header__btn{
+    background-color: var(--orange-color);
+}
