@@ -1,3 +1,9 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+
 :root{
     --black-color:#212529;
     --orange-color:#FFB742;
@@ -24,7 +30,6 @@ li{
     list-style-type: none;
 }
 a{
-
     text-decoration: none;
 }
 .link > a{
@@ -39,9 +44,10 @@ a{
     color:var(--black-color);
     border-radius: 50px;
     width: 121px;
-    height: 54px;
+    height: 40px;
     text-align: center;
     padding-top: 1rem;
+    margin: 2rem 0;
 }
 .btn > a{
     color:var(--black-color);
@@ -119,6 +125,7 @@ width: 148px;
 height: 42px;
 text-align: center;
 padding-top: 1rem;
+display: inline-block;
 }
 .main__h2{
     color:var(--white-color);
@@ -161,4 +168,37 @@ flex-direction: column;
 .tech:hover{
     background-color: #FFB742;
     opacity: 50%;
+}
+
+/* Works */
+.works{
+    text-align: center;
+}
+.works-nav{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    margin-top: 2rem;
+}
+.work-nav>a{
+    color:var(--white-color);
+    font-size: 0.9rem;
+    border-radius: 3px;
+    Padding: 5px, 20px, 5px, 20px;
+}
+.work-nav:hover>a{
+    color: var(--black-color);
+    background-color: var(--orange-color);
+}
+.works-pic{
+    display: flex;
+}
+.work-pick{
+    display: flex;
+    flex-direction: column;
+}
+.work-pic>img{
+    margin: 1.8rem 1.2rem;
+
 }
