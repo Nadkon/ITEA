@@ -50,7 +50,7 @@ a{
     padding: .6rem 1.4rem;
 }
 
-/* MAIN */
+/* descrition */
 .description{
     margin-top: 100px;
     color:var(--white-color);
@@ -58,22 +58,24 @@ a{
     font-family: 'Inter', sans-serif;
 }
 
-.main__h1{
+.description__h1{
     font-size: 2rem;
 
 }
-.main__h1 > span{
+.description__h1 > span{
 color: var(--orange-color);
 }
-.main__h2 {
+.description__h2 {
 font-size: 3rem;
+opacity: 0.5;
 }
-p{
+
+.description>p{
 font-size: 1.5rem;
 /* font-weight: 400; */
 }
 
-/* experience */
+/* cards */
 
 .cards{
     display: flex;
@@ -101,12 +103,12 @@ font-size: 2rem;
     font-size: 1rem;
 }
 
-/* about me */
+/* main*/
 .about-me{
     display: flex;
     margin-top: 220px;
 }
-.about-me>div>div:first-of-type{
+.main__h1 {
     text-transform: uppercase;
     color: var(--orange-color);
     font-size: 1.25rem;
@@ -118,8 +120,19 @@ height: 42px;
 text-align: center;
 padding-top: 1rem;
 }
-.about__h2{
+.main__h2{
     color:var(--white-color);
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;
+}
+.main__p{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+/* or 188% */
+
+
+color: #D5D5D5;
 }
