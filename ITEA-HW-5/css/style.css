@@ -34,7 +34,7 @@ a{
     font-size: 1.1rem;
     
 }
-.header__btn{
+.btn{
     background-color: var(--orange-color);
     color:var(--black-color);
     border-radius: 50px;
@@ -43,7 +43,7 @@ a{
     text-align: center;
     padding-top: 1rem;
 }
-.header__btn > a{
+.btn > a{
     color:var(--black-color);
     font-weight: 700;
     font-size: 1.1rem;
@@ -132,7 +132,33 @@ font-weight: 400;
 font-size: 16px;
 line-height: 30px;
 /* or 188% */
-
-
 color: #D5D5D5;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+}
+.skill{
+    width: 50%;
+}
+.techs{
+display: flex;
+align-items: flex-end;
+flex-direction: column;
+}
+.tech{
+    background-color: #383E45;
+    border-radius: 10px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 0.1em;
+}
+.tech>img{
+    padding:16px;
+}
+.tech:hover{
+    background-color: #FFB742;
+    opacity: 50%;
 }
