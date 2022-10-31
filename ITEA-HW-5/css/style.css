@@ -170,14 +170,17 @@ a {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  /* width: 100%; */
 }
 .tech {
   background-color: #383e45;
   border-radius: 10px;
-  display: inline-block;
   width: 80px;
   height: 80px;
   margin: 0.1em;
+}
+.techs > div {
+  display: flex;
 }
 .tech > img {
   padding: 16px;
