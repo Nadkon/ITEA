@@ -116,7 +116,7 @@ a {
   color: var(--black-color);
 }
 .card:hover {
-  background-color: linear-gradient(
+  background: linear-gradient(
     94.3deg,
     #ffb742 0%,
     rgba(255, 123, 66, 0.76) 99.33%
