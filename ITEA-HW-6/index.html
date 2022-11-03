@@ -13,14 +13,133 @@
   </head>
   <body>
     <section class="web-form">
-      <div class="form">
-        <form></form>
-      </div>
+      <div class="form-body">
+        <div class="form">
+          <h1 class="form__h1">Kreativ</h1>
 
-      <div></div>
+          <form>
+            <fieldset>
+              <legend>Let’s get you started</legend>
+              <div class="center">
+                <p class="label">
+                  <label for="name">Full name</label>
+                </p>
+                <p class="input">
+                  <input type="text" name="name" id="name" value="Ade Tiger" />
+                </p>
+
+                <p class="label">
+                  <label for="email">Email address</label>
+                </p>
+                <p class="input">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    value="yourname@email.com"
+                  />
+                </p>
+
+                <p class="label">
+                  <label for="tel">Phone number</label>
+                </p>
+                <p class="input">
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    value="+234 800 2738 9700"
+                  />
+                </p>
+
+                <p class="label">
+                  <label for="password">Create password</label>
+                </p>
+                <p class="input password">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="&bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull;  "
+                  />
+                </p>
+                <p class="comment">
+                  Password must contain a minimum of 8 characters <br />
+                  Password must contain at least one symbol e.g. @, !
+                </p>
+
+                <p class="label">
+                  <label for="cities">Location<span>(Optional)</span></label>
+                </p>
+                <p class="input">
+                  <input
+                    type="text"
+                    name="city"
+                    placeholder="Select Location"
+                    id="cities"
+                    list="city"
+                  />
+                  <datalist id="city">
+                    <option value="Київ"></option>
+                    <option value="Львів"></option>
+                    <option value="Дніпро"></option>
+                    <option value="Харків"></option>
+                    <option value="Івано-Франківськ"></option>
+                    <option value="Тернопіль"></option>
+                    <option value="Вінниця"></option>
+                    <option value="Запоріжжя"></option>
+                    <option value="Одеса"></option>
+                    <option value="Хмельницький"></option>
+                    <option value="Рівне"></option>
+                    <option value="Полтава"></option>
+                    <option value="Луцьк"></option>
+                    <option value="Кропивницьк"></option>
+                    <option value="Черкаси"></option>
+                    <option value="Житомир"></option>
+                    <option value="Чернівці"></option>
+                    <option value="Чернігів"></option>
+                    <option value="Миколаїв"></option>
+                    <option value="Суми"></option>
+                    <option value="Ужгород"></option>
+                    <option value="Херсон"></option>
+                    <option value="Донецьк"></option>
+                    <option value="Луганськ"></option>
+                    <option value="Сімферополь"></option>
+                  </datalist>
+                </p>
+
+                <p class="btn center">
+                  <input type="submit" value="Sign Up" />
+                </p>
+              </div>
+            </fieldset>
+          </form>
+
+          <p class="form-footer">
+            Already a user?
+            <a href="#">Login</a>
+          </p>
+        </div>
+      </div>
+      <div class="form-description">
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Contact</a>
+        </nav>
+        <p class="quote">“Creativity is intelligence having fun”</p>
+        <p class="author">Albert Einstein</p>
+      </div>
     </section>
 
     <!-- Mobile form -->
-    <section class="mobile-form"></section>
+    <section class="mobile-form">
+      <div class="mobile-header">
+        <h1 class="form__h1">Kreativ</h1>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </section>
   </body>
 </html>
