@@ -141,6 +141,7 @@ label[for="cities"] > span {
   width: 50%;
   height: 80%;
   text-align: right;
+  box-sizing: border-box;
 }
 nav {
   padding: 10px;
@@ -169,7 +170,7 @@ nav {
   text-align: left;
   margin-top: 0;
   padding-left: 70px;
-  margin-bottom: 200px;
+  margin-bottom: 172px;
 }
 .form-body,
 .form-description {
