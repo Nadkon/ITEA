@@ -13,11 +13,11 @@ body {
   /* background-color: #214159; */
   max-width: 1400px;
   margin: 0 auto;
+  font-family: "Space Grotesk", sans-serif;
 }
 /* Web form */
 
 .web-form {
-  font-family: "Space Grotesk", sans-serif;
   display: flex;
   justify-content: center;
   background: linear-gradient(112.23deg, #3e718e 0%, #64969b 100%);
@@ -65,6 +65,8 @@ label {
 }
 input {
   width: 70%;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
 }
 input[value] {
   color: var(--value-color);
@@ -178,10 +180,12 @@ nav {
 
 .mobile-form {
   width: 375px;
-  height: 870px;
+  height: 100%;
   background: var(--backgroud-white);
   border: 1px solid blue;
   margin-top: 30px;
+  background-image: url(/img/vector.svg);
+  background-repeat: no-repeat;
 }
 .mobile-header {
   display: flex;
@@ -190,5 +194,52 @@ nav {
 .mobile-header > nav {
   width: 40%;
   margin: 0 auto;
-  padding: 20px 10px;
+  padding-top: 40px;
+}
+.mobile-header > nav {
+  padding-right: 30px;
+  text-align: right;
+  word-spacing: 15px;
+}
+.mobile-header a {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 24px;
+  text-decoration: none;
+  color: #24445b;
+}
+.mobile-main > p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.125rem;
+  color: #24445b;
+  padding: 28px;
+}
+.mobile-main-form > form {
+  margin-top: 0;
+}
+.mobile-main-form input {
+  width: 80%;
+  padding: 10px;
+}
+.mobile-main-form .label,
+.mobile-main-form .comment {
+  padding-left: 35px;
+}
+.mobile-main-form .label {
+  font-size: 14px;
+
+  color: #000000;
+  opacity: 0.8;
+}
+.mobile-main-form .comment {
+  margin-top: 10px;
+  line-height: 24px;
+}
+.mobile-main-form input[type="submit"] {
+  margin-top: 10px;
+  width: 85%;
+}
+.mobile-main-form > .form-footer {
+  margin: 24px 0;
 }
