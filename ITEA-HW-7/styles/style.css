@@ -1,0 +1,157 @@
+:root {
+  font-family: "Rosario", sans-serif;
+  font-size: 36px;
+  width: 1920px;
+
+  --white: #fffcfc;
+  --logo-background: #fffbfb;
+  --black-color: #000000;
+}
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--black-color);
+  position: sticky;
+  top: 0;
+}
+.header__logo {
+  background-color: var(--logo-background);
+}
+nav {
+  padding: 40px;
+}
+.header__nav {
+  text-align: right;
+  margin: 0 auto;
+}
+.header__list {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+}
+.header__link {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 44px;
+  color: var(--white);
+}
+
+/* TO BE DETELED */
+section {
+  border: 1px solid red;
+  box-sizing: border-box;
+  height: 1080;
+}
+/* Page 1: main conent */
+.service {
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.side {
+  width: 20%;
+}
+.middle {
+  width: 25%;
+}
+.main__photo_middle {
+  width: 465px;
+  height: 410px;
+  border-radius: 30px;
+}
+.main__photo_side {
+  padding-top: 25%;
+}
+
+/* Page 2: services */
+.service {
+  display: flex;
+  justify-content: center;
+}
+.service__list {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service__title {
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.33rem;
+  color: var(--black-color);
+  padding: 0;
+  margin: 0 auto;
+}
+.service__photo_styling {
+  padding: 20px;
+}
+.service__master-photo {
+  margin: 0 auto;
+}
+
+/*  Page 3: team */
+.team__h1 {
+  font-size: 2.67rem;
+  line-height: 116px;
+  text-align: center;
+  margin: 15px auto;
+}
+.team__photo {
+  display: flex;
+  justify-content: space-around;
+}
+.team__photo div {
+  height: 677px;
+  width: 20%;
+}
+.team__photo-first {
+  background-image: url("../img/team_photo1.png");
+}
+.team__photo-second {
+  background-image: url("../img/team_photo2.png");
+}
+.team__photo-third {
+  background-image: url("../img/team_photo3.png");
+}
+.team__photo-forth {
+  background-image: url("../img/team_photo4.png");
+}
+.team__photo_border {
+  border-radius: 40px;
+  position: relative;
+}
+.team__photo_name {
+  text-align: center;
+  background-color: #a3530a;
+  width: 100%;
+  height: 154px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 40px 40px;
+  line-height: 4;
+  opacity: 0;
+}
+.team__photo_border:hover .team__photo_name {
+  opacity: 1;
+}
+.team__photo-first:hover {
+  background-image: url("../img/team_photo1_hover.png");
+}
+.team__photo-second:hover {
+  background-image: url("../img/team_photo2_hover.png");
+}
+.team__photo-third:hover {
+  background-image: url("../img/team_photo3_hover.png");
+}
+.team__photo-forth:hover {
+  background-image: url("../img/team_photo4_hover.png");
+}
