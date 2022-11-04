@@ -1,11 +1,20 @@
 :root {
   font-family: "Rosario", sans-serif;
   font-size: 36px;
-  width: 1920px;
+  max-width: 1920px;
 
   --white: #fffcfc;
   --logo-background: #fffbfb;
   --black-color: #000000;
+  margin: 0 auto;
+  --background-color-main: #e5e5e5;
+  --background-white: #ffffff;
+  background-color: var(--background-color-main);
+}
+body {
+  max-width: 100%;
+  min-height: 90vh;
+  background-color: var(--background-color-main);
 }
 /* header */
 .header {
@@ -14,6 +23,8 @@
   background-color: var(--black-color);
   position: sticky;
   top: 0;
+  height: 10vh;
+  z-index: 4;
 }
 .header__logo {
   background-color: var(--logo-background);
@@ -40,14 +51,13 @@ nav {
 
 /* TO BE DETELED */
 section {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   box-sizing: border-box;
-  height: 1080;
+  height: 950px;
+  background-color: var(--background-white);
 }
-/* Page 1: main conent */
-.service {
-  box-sizing: border-box;
-}
+/* Page 1: main content */
+
 .main {
   display: flex;
   justify-content: space-evenly;
@@ -61,23 +71,27 @@ section {
   width: 25%;
 }
 .main__photo_middle {
-  width: 465px;
+  width: 100%;
   height: 410px;
   border-radius: 30px;
 }
 .main__photo_side {
   padding-top: 25%;
+  width: 100%;
 }
 
 /* Page 2: services */
 .service {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .service__list {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* margin-left: 60px;
+  margin-top: 20px; */
 }
 
 .service__title {
@@ -89,11 +103,19 @@ section {
   padding: 0;
   margin: 0 auto;
 }
+.service__photo {
+  width: 50%;
+  height: 50%;
+}
 .service__photo_styling {
   padding: 20px;
+  width: 70%;
 }
 .service__master-photo {
-  margin: 0 auto;
+  margin: 0;
+}
+.service__master-photo > img {
+  height: 100%;
 }
 
 /*  Page 3: team */
@@ -101,7 +123,7 @@ section {
   font-size: 2.67rem;
   line-height: 116px;
   text-align: center;
-  margin: 15px auto;
+  margin: 40px auto;
 }
 .team__photo {
   display: flex;
@@ -126,6 +148,7 @@ section {
 .team__photo_border {
   border-radius: 40px;
   position: relative;
+  transition: all 0.3s;
 }
 .team__photo_name {
   text-align: center;
@@ -154,4 +177,95 @@ section {
 }
 .team__photo-forth:hover {
   background-image: url("../img/team_photo4_hover.png");
+}
+
+/* Page 4: contacts */
+.contacts {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--background-color-main);
+}
+.contacts__form {
+  width: 60%;
+}
+.contacts__map {
+  width: 40%;
+  padding-top: 70px;
+}
+iframe {
+  height: 90%;
+}
+.contacts__form-card {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__form_h1 {
+  font-style: italic;
+  font-size: 64px;
+  text-align: center;
+}
+.contact__form_input,
+.contact__form-message {
+  font-size: 36px;
+  padding: 20px;
+  margin: 15px;
+  border: none;
+}
+.contact__form_input::placeholder,
+.contact__form-message {
+  font-family: "Rosario";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+.contact__form-message {
+  resize: none;
+}
+.contacts__info {
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.bold {
+  font-weight: 700;
+  font-style: normal;
+}
+.contacts__info a {
+  text-decoration: none;
+  color: #000000;
+}
+.contacts__info p {
+  margin: 0;
+}
+.working-hours_h1 {
+  margin: 0 auto;
+  font-size: 36px;
+  line-height: 44px;
+  font-style: normal;
+  padding-bottom: 25px;
+}
+.social-media_h1 {
+  margin: 0;
+  font-style: normal;
+  font-size: 30px;
+}
+.contacts__contact-info,
+.contacts__working-hours,
+.contacts__social-media {
+  width: 30%;
+}
+.social-media__link {
+  text-align: justify;
+  padding-left: 185px;
 }
