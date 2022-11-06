@@ -2,18 +2,18 @@
   font-family: "Rosario", sans-serif;
   font-size: 36px;
   max-width: 1920px;
-
+  margin: 0 auto;
+  scroll-behavior: smooth;
   --white: #fffcfc;
   --logo-background: #fffbfb;
   --black-color: #000000;
-  margin: 0 auto;
   --background-color-main: #e5e5e5;
   --background-white: #ffffff;
   background-color: var(--background-color-main);
 }
 body {
   max-width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   background-color: var(--background-color-main);
 }
 /* header */
@@ -49,49 +49,89 @@ nav {
   color: var(--white);
 }
 
-/* TO BE DETELED */
 section {
-  /* border: 1px solid red; */
   box-sizing: border-box;
-  height: 950px;
+  min-height: 90vh;
   background-color: var(--background-white);
+  padding-top: 10vh;
 }
 /* Page 1: main content */
+
+@keyframes showLeft {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@keyframes showRight {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
 
 .main {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  align-items: center;
+  padding-top: 10%;
 }
 .side {
   width: 20%;
+  height: 70%;
 }
 .middle {
   width: 25%;
+  height: 45%;
+  align-self: flex-start;
+  padding-top: 1%;
 }
 .main__photo_middle {
   width: 100%;
-  height: 410px;
+  height: 100%;
   border-radius: 30px;
 }
 .main__photo_side {
-  padding-top: 25%;
   width: 100%;
+  height: 100%;
+}
+.middle-left,
+.side-left,
+.middle-right,
+.side-right {
+  position: relative;
+}
+.middle-left {
+  animation: showLeft 1s linear;
+}
+.middle-right {
+  animation: showRight 1s linear;
+}
+.side-left {
+  animation: showLeft 2s linear;
+}
+.side-right {
+  animation: showRight 2s linear;
 }
 
 /* Page 2: services */
 .service {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .service__list {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /* margin-left: 60px;
-  margin-top: 20px; */
 }
 
 .service__title {
@@ -113,9 +153,97 @@ section {
 }
 .service__master-photo {
   margin: 0;
+  width: 50%;
+  align-self: stretch;
 }
 .service__master-photo > img {
   height: 100%;
+  width: 100%;
+}
+
+.service__photo_one {
+  animation: RotateOne 7s linear infinite;
+}
+
+@keyframes RotateOne {
+  0% {
+    transform: translate(10px, 10px);
+  }
+  25% {
+    transform: translate(470px, 10px);
+  }
+  50% {
+    transform: translate(470px, 435px);
+  }
+  75% {
+    transform: translate(10px, 435px);
+  }
+  100% {
+    transform: translate(10px, 10px);
+  }
+}
+.service__photo_two {
+  animation: RotateTwo 7s linear infinite;
+}
+
+@keyframes RotateTwo {
+  0% {
+    transform: translate(10px, 10px);
+  }
+  25% {
+    transform: translate(10px, 435px);
+  }
+  50% {
+    transform: translate(-470px, 435px);
+  }
+  75% {
+    transform: translate(-470px, 10px);
+  }
+  100% {
+    transform: translate(10px, 10px);
+  }
+}
+.service__photo_three {
+  animation: RotateThree 7s linear infinite;
+}
+
+@keyframes RotateThree {
+  0% {
+    transform: translate(10px, 10px);
+  }
+  25% {
+    transform: translate(10px, -430px);
+  }
+  50% {
+    transform: translate(500px, -430px);
+  }
+  75% {
+    transform: translate(500px, 10px);
+  }
+  100% {
+    transform: translate(10px, 10px);
+  }
+}
+.service__photo_four {
+  animation: RotateFour 7s linear infinite;
+}
+
+@keyframes RotateFour {
+  0% {
+    transform: translate(10px, 10px);
+  }
+  25% {
+    transform: translate(-470px, 10px);
+  }
+  50% {
+    transform: translate(-470px, -430px);
+  }
+  75% {
+    transform: translate(10px, -430px);
+  }
+  100% {
+    transform: translate(10px, 10px);
+  }
 }
 
 /*  Page 3: team */
@@ -149,6 +277,7 @@ section {
   border-radius: 40px;
   position: relative;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .team__photo_name {
   text-align: center;

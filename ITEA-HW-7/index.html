@@ -15,7 +15,9 @@
     <!-- header -->
     <header class="header">
       <div class="header__logo">
-        <img src="./img/logo.png" alt="logo" />
+        <a href="#main">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
       </div>
 
       <nav>
@@ -24,34 +26,34 @@
             <a href="" class="header__link">Appointment</a>
           </li>
           <li class="header__list">
-            <a href="" class="header__link">Gallery</a>
+            <a href="#main" class="header__link">Gallery</a>
           </li>
           <li class="header__list">
-            <a href="" class="header__link">Services</a>
+            <a href="#service" class="header__link">Services</a>
           </li>
           <li class="header__list">
-            <a href="" class="header__link">Team</a>
+            <a href="#team" class="header__link">Team</a>
           </li>
           <li class="header__list">
             <a href="" class="header__link">Reviews</a>
           </li>
           <li class="header__list">
-            <a href="" class="header__link">Contact</a>
+            <a href="#contacts" class="header__link">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="main">
-        <div class="main__photo side">
+      <section class="main" id="main">
+        <div class="main__photo side side-left">
           <img
             src="./img/main_photo5.png"
             alt="boy with a comb"
             class="main__photo_side"
           />
         </div>
-        <div class="main__photo middle">
+        <div class="main__photo middle middle-left">
           <img
             src="./img/main_photo1.png"
             alt="man in a hat"
@@ -63,7 +65,7 @@
             class="main__photo_middle"
           />
         </div>
-        <div class="main__photo middle">
+        <div class="main__photo middle middle-right">
           <img
             src="./img/main_photo2.png"
             alt="styling hair"
@@ -75,7 +77,7 @@
             class="main__photo_middle"
           />
         </div>
-        <div class="main__photo side">
+        <div class="main__photo side side-right">
           <img
             src="./img/main_photo6.png"
             alt="cutting boy's hair"
@@ -84,9 +86,9 @@
         </div>
       </section>
 
-      <section class="service">
+      <section class="service" id="service">
         <div class="service__list">
-          <div class="service__photo">
+          <div class="service__photo service__photo_one">
             <img
               src="./img/service_photo1.png"
               alt="Hair Styling"
@@ -94,7 +96,7 @@
             />
             <p class="service__title">Hair Styling</p>
           </div>
-          <div class="service__photo">
+          <div class="service__photo service__photo_two">
             <img
               src="./img/service_photo2.png"
               alt="Beard Trimming"
@@ -102,7 +104,7 @@
             />
             <p class="service__title">Beard Trimming</p>
           </div>
-          <div class="service__photo">
+          <div class="service__photo service__photo_three">
             <img
               src="./img/service_photo3.png"
               alt="Smooth Shave"
@@ -110,7 +112,7 @@
             />
             <p class="service__title">Smooth Shave</p>
           </div>
-          <div class="service__photo">
+          <div class="service__photo service__photo_four">
             <img
               src="./img/service_photo4.png"
               alt="Hair Straightening"
@@ -124,7 +126,7 @@
         </div>
       </section>
 
-      <section class="team">
+      <section class="team" id="team">
         <h1 class="team__h1">Meet Our Highly Skilled Experts</h1>
         <div class="team__photo">
           <div class="team__photo-first team__photo_border">
@@ -142,7 +144,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="contacts__form-card">
           <div class="contacts__form">
             <h1 class="contacts__form_h1">
