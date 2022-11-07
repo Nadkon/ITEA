@@ -15,6 +15,7 @@ body {
   max-width: 100%;
   min-height: 100vh;
   background-color: var(--background-color-main);
+  margin: 0;
 }
 /* header */
 .header {
@@ -93,13 +94,16 @@ section {
   align-self: flex-start;
   padding-top: 1%;
 }
+.main__photo.side {
+  margin-bottom: 10%;
+}
 .main__photo_middle {
-  width: 100%;
+  width: 95%;
   height: 100%;
   border-radius: 30px;
 }
 .main__photo_side {
-  width: 100%;
+  width: 95%;
   height: 100%;
 }
 .middle-left,
@@ -332,12 +336,12 @@ iframe {
 }
 .contacts__form_h1 {
   font-style: italic;
-  font-size: 64px;
+  font-size: 1.78rem;
   text-align: center;
 }
 .contact__form_input,
 .contact__form-message {
-  font-size: 36px;
+  font-size: 1rem;
   padding: 20px;
   margin: 15px;
   border: none;
@@ -347,7 +351,7 @@ iframe {
   font-family: "Rosario";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 1rem;
   line-height: 44px;
   display: flex;
   align-items: center;
@@ -359,7 +363,7 @@ iframe {
 }
 .contacts__info {
   font-style: italic;
-  font-size: 30px;
+  font-size: 0.83rem;
   text-align: center;
   color: #000000;
   display: flex;
@@ -379,7 +383,7 @@ iframe {
 }
 .working-hours_h1 {
   margin: 0 auto;
-  font-size: 36px;
+  font-size: 1rem;
   line-height: 44px;
   font-style: normal;
   padding-bottom: 25px;
@@ -387,7 +391,7 @@ iframe {
 .social-media_h1 {
   margin: 0;
   font-style: normal;
-  font-size: 30px;
+  font-size: 0.83rem;
 }
 .contacts__contact-info,
 .contacts__working-hours,
