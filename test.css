@@ -40,7 +40,8 @@ body {
   background-size: cover;
   background-position: center;
 
-  filter: brightness(0.5);
+  /* filter: brightness(0.5); */
+  filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
 }
 .team__photo_name {
   text-align: center;
